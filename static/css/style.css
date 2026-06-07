@@ -1,0 +1,245 @@
+/* ===== BASE ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.8;
+    color: #333;
+    background: #b9d1d8;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.75) !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    padding: 0.6rem 2rem;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    font-family: Cambria, serif;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: white !important;
+    margin: 0 0.5rem;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.nav-link:hover {
+    color: #b9d1d8 !important;
+    background: rgba(255,255,255,0.1);
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* ===== CARDS ===== */
+.card {
+    background: rgba(121, 121, 121, 0.8);
+    border: none !important;
+    border-radius: 20px !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1.25rem;
+    color: white;
+}
+
+.card-header {
+    background: rgba(0, 0, 0, 0.3) !important;
+    border-radius: 20px 20px 0 0 !important;
+    border: none !important;
+    color: white;
+    font-size: 1rem;
+    padding: 0.8rem 1.25rem;
+}
+
+.card-footer {
+    background: rgba(0, 0, 0, 0.2) !important;
+    border-radius: 0 0 20px 20px !important;
+    border: none !important;
+    color: rgba(255,255,255,0.8);
+}
+
+.card-footer a {
+    color: #b9d1d8;
+}
+
+/* ===== STAT CARDS (dashboard) ===== */
+.card.text-center h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* ===== PRIORITY BORDERS ===== */
+.priority-high   { border-left: 5px solid #dc3545 !important; }
+.priority-medium { border-left: 5px solid #fd7e14 !important; }
+.priority-low    { border-left: 5px solid #0d6efd !important; }
+
+/* ===== BADGES ===== */
+.badge-open        { background-color: #dc3545 !important; }
+.badge-in_progress { background-color: #fd7e14 !important; }
+.badge-closed      { background-color: #198754 !important; }
+
+/* ===== BUTTONS ===== */
+.btn {
+    border-radius: 20px !important;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    padding: 0.4rem 1.2rem;
+}
+
+.btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    background: rgba(0, 0, 0, 0.5) !important;
+    border: 1px solid rgba(255,255,255,0.3) !important;
+    color: white !important;
+}
+
+.btn-primary:hover {
+    background: #333 !important;
+}
+
+.btn-secondary {
+    background: rgba(121, 121, 121, 0.8) !important;
+    border: none !important;
+    color: white !important;
+}
+
+.btn-danger {
+    border-radius: 20px !important;
+}
+
+.btn-link {
+    color: #1a4a5a !important;
+}
+
+/* ===== FORMS ===== */
+.form-control, .form-select {
+    border-radius: 12px !important;
+    border: 1px solid rgba(0,0,0,0.2) !important;
+    background: rgba(255,255,255,0.85) !important;
+    font-family: Cambria, serif;
+}
+
+.form-control:focus, .form-select:focus {
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.15) !important;
+    border-color: rgba(0,0,0,0.4) !important;
+}
+
+.form-label {
+    color: #1a3a45;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+/* ===== TABLE (staff dashboard) ===== */
+.table {
+    color: white;
+    font-family: Cambria, serif;
+}
+
+.table-dark th {
+    background: rgba(0,0,0,0.5) !important;
+    border: none;
+}
+
+.table-hover tbody tr:hover {
+    background: rgba(255,255,255,0.1) !important;
+    color: white;
+}
+
+.table td, .table th {
+    border-color: rgba(255,255,255,0.1) !important;
+    vertical-align: middle;
+}
+
+/* ===== ALERTS ===== */
+.alert {
+    border-radius: 15px !important;
+    border: none !important;
+    background: rgba(255,255,255,0.85) !important;
+    color: #333 !important;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.alert-success { border-left: 5px solid #198754 !important; }
+.alert-info    { border-left: 5px solid #0dcaf0 !important; }
+.alert-danger  { border-left: 5px solid #dc3545 !important; }
+
+/* ===== LIST GROUP ===== */
+.list-group-item {
+    background: rgba(255,255,255,0.15) !important;
+    border-color: rgba(255,255,255,0.1) !important;
+    color: white !important;
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    background: rgba(255,255,255,0.25) !important;
+    transform: translateX(3px);
+}
+
+.list-group-item a {
+    color: white !important;
+    text-decoration: none;
+}
+
+.list-group-item a:hover {
+    color: #b9d1d8 !important;
+}
+
+/* ===== HEADINGS ===== */
+h1, h2 {
+    color: #1a3a45;
+    margin-bottom: 0.5rem;
+}
+
+h5.card-title {
+    color: white;
+}
+
+/* ===== LINKS ===== */
+a {
+    color: #1a4a5a;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #333;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: #555;
+    font-size: 0.85rem;
+    margin-top: 3rem;
+}
+
+/* ===== FILTER BUTTONS ===== */
+.btn-outline-secondary.active,
+.btn-outline-danger.active,
+.btn-outline-warning.active,
+.btn-outline-success.active,
+.btn-outline-primary.active {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
